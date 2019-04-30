@@ -1,0 +1,56 @@
+# LISTS
+#        creating, appending, inserting, removing, popping, sorting, reversing, 
+#        slicing
+#        range
+#        list comprehensions
+
+# Array
+myList = [42, 67, 126, 666, 1138, 3, 8, 22]
+print("myList: ", myList) #Prints the whole array
+
+# Prints the first element in the array
+print("1st element is: ", myList[0])   
+
+# Shortcut to print last element in array
+print("Last element is: ", myList[-1])
+
+# Shortcut to print 2nd to last element in array
+print("2nd to last element is: ", myList[-2])
+
+# Print first element in a different way
+print("1st element is: ", myList[-5])
+
+# Prompt
+index = int(input("Which index do you want to see?  "))
+print("Your element is: ", myList[index])
+
+# Alias WARNING!!!!!
+copyList = myList
+copyList[0] = -6
+print(copyList)
+print(myList) # Notice that both arrays are being manipulated... because of alias
+
+myList.pop(3) # Remove at index number
+print(myList)
+
+myList.remove(67) # Searches through the array to take out certain value
+print(myList)
+
+myList.sort() # Sorts the array (it can sort numbers and strings)
+print(myList)
+
+myList.reverse() # Reverse the list
+print(myList) 
+
+from random import shuffle #Import shuffle
+shuffle(myList) # Shuffles the myList
+print(myList) 
+
+myList = myList[2:5] # Slice-And-Dice (take from range)
+print(myList)
+
+forLoop = list(range(0, 50, 1)) # For-Loop, put it inside the list array, and print it out
+print(forLoop)
+
+double = [x*2 for x in myList] # Takes the myList list and put the modified list into double and double each index by 2
+print(double)
