@@ -1,0 +1,89 @@
+#!/usr/bin/env python
+# coding: utf-8
+# In[ ]:
+
+
+# Print
+print("Hello World")
+
+#End without going to next line
+print("Good", end=" ")
+print("Bye")
+
+
+# In[ ]:
+
+
+# Excape Key
+print("This is a quote \"")
+
+
+# In[ ]:
+
+
+# Variable
+x = 4
+print(x)
+
+# Variable Manipulation
+x = x + 12
+print(x)
+
+
+# In[ ]:
+
+
+# Concatenate
+print("The number is", x)
+
+
+# In[ ]:
+
+
+# Input from user
+input("Please give me your age: ")
+
+# Save input into a variable
+age = input("Please give me your age: ")
+print("So you are", age, "years old")
+
+# Cast
+nextAge = int(age) + 1
+print("Next year you will be", nextAge, "years old")
+
+age = int(age)
+
+if age > 30:
+    print("Sorry, I can't trust you.")
+    print("You're just too old.")
+elif age == 18:
+    print("You're 18!!!")
+
+
+# In[3]:
+
+
+year = input("What year were you born at?")
+year = int(year)
+yearOld = 2019 - year
+if yearOld > 18:
+    boolean = input("Have you registered to vote? ").lower()
+    if boolean == "yes":
+        print("Awesome")
+    if boolean == "no":
+        print("Here is the URL: www.dawjdoiwjdoawjd.gov")
+
+    
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
